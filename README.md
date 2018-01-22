@@ -10,7 +10,7 @@ The automation.py script supports one class currently.
 The main.py file runs indepedently and can convert .png images on linux systems to .jpg for labeling. 
 
 
-# Running the files
+# Running the file automation.py
 
 1) Make sure you have BBox Label Tool and Darknet
 2) Make sure mypath  (lines 90 ) has the path to your Labels folder with an /%s/ added to the end. Also outpath should have the path to your labels folder with /converted added to the end
