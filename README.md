@@ -76,5 +76,5 @@ You can use ' -gpus0,1 ' if you have more than one gpu at your disposal:
 
 * Subdivisions number is standard 8. Decreasing it may cause a seg fault. The GPU may run out of memory. However 6 is a good number to use on better GPUs.
 
-* Make sure each jpg file has a corresponding .txt file!
+* Make sure each jpg file has a corresponding .txt file before training!
 
