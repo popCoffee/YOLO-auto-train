@@ -1,10 +1,11 @@
 #-------------------------------------------------------------------------------
 # Name:        Modified Object bounding box label tool
 # Purpose:     Label object bboxes for ImageNet Detection data
-# Author:      AndrewKubal
+# Editing Author:      AndrewKubal
 # Created:     12/06/2017
-
+# Orginal creator:     https://github.com/puzzledqs
 #
+
 #-------------------------------------------------------------------------------
 from __future__ import division
 from Tkinter import *
