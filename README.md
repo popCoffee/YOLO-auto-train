@@ -55,7 +55,7 @@ The main.py file runs indepedently and can convert .png images on linux systems 
 
 You will find your images and files in the ALLrecentJpgTxt folder.
 
-If everything is done right, past this line into the shell to train:
+If everything is done right, paste this line into the shell to train:
 ```
 ./darknet detector train obj.data yolo-obj.cfg darknet19_448.conv.23
 ```
