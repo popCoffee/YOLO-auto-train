@@ -14,8 +14,8 @@ The main.py file runs indepedently and can convert .png images on linux systems 
 
 1) Make sure you have BBox Label Tool mulit class and Darknet
 ```
-https://github.com/jxgu1016/BBox-Label-Tool-Multi-Class
-https://github.com/pjreddie/darknet/wiki/YOLO:-Real-Time-Object-Detection
+    https://github.com/jxgu1016/BBox-Label-Tool-Multi-Class
+    https://github.com/pjreddie/darknet/wiki/YOLO:-Real-Time-Object-Detection
 ```
 
 2) Clone or download main.py and automation.py. Place main.py and automation.py under BBox Label Tool directory
@@ -51,12 +51,15 @@ https://github.com/pjreddie/darknet/wiki/YOLO:-Real-Time-Object-Detection
 
 (Mind the WARNING if one appears)
 
-  You will find your images and files in the ALLrecentJpgTxt folder.
 
-  if everything is done right, past this line into the shell to train:
-      ./darknet detector train obj.data yolo-obj.cfg darknet19_448.conv.23
- 
+You will find your images and files in the ALLrecentJpgTxt folder.
 
-  You can use ' -gpus0,1 ' if you have more than one gpu at your disposal:
-      ./darknet detector train obj.data yolo-obj.cfg darknet19_448.conv.23 -gpus0,1 
+If everything is done right, past this line into the shell to train:
+
+./darknet detector train obj.data yolo-obj.cfg darknet19_448.conv.23
+
+
+You can use ' -gpus0,1 ' if you have more than one gpu at your disposal:
+
+./darknet detector train obj.data yolo-obj.cfg darknet19_448.conv.23 -gpus0,1 
 
