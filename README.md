@@ -51,6 +51,7 @@ The main.py file runs indepedently and can convert .png images on linux systems 
 
 (Mind the WARNING if one appears)
 
+### Additional Details
 
 You will find your images and files in the ALLrecentJpgTxt folder.
 
@@ -62,4 +63,17 @@ If everything is done right, past this line into the shell to train:
 You can use ' -gpus0,1 ' if you have more than one gpu at your disposal:
 
 ./darknet detector train obj.data yolo-obj.cfg darknet19_448.conv.23 -gpus0,1 
+
+### Notes
+
+* The script will only handle one file at a time, so if you have multiple folders with images the script will need to be ran multiple times.
+
+* The script will only handle one file at a time. If there are multiple folders with labled .txt files in them (for example Labels/001/, Labels/002/ ... etc) the script will need to be ran multiple times.
+
+* Currently the script handles one class. This can be easily changed.
+
+* Batch number is 64. Better performing GPUs can take on 128 and so on.
+
+* Subdivisions number is standard 8. Decreasing it may cause a seg fault. The GPU may run out of memory. However 6 is a good number to use on better GPUs.
+
 
