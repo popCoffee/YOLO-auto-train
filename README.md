@@ -12,7 +12,7 @@ The main.py file runs indepedently and can convert .png images on linux systems 
 
 ## Running the file automation.py
 
-1) Make sure you have BBox Label Tool mulit class and Darknet. The script will not work without the BBox Label Tools folders
+1) Make sure you have BBox Label Tool Multi class and Darknet. The script will not work without the BBox Label Tools folders
 ```
     https://github.com/jxgu1016/BBox-Label-Tool-Multi-Class
     https://github.com/pjreddie/darknet/wiki/YOLO:-Real-Time-Object-Detection
