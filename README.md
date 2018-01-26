@@ -77,4 +77,4 @@ You can use ' -gpus0,1 ' if you have more than one gpu at your disposal:
 * Subdivisions number is standard 8. Decreasing it may cause a seg fault. The GPU may run out of memory. However 6 is a good number to use on better GPUs.
 
 * Make sure each jpg file has a corresponding .txt file before training!
-* (For now) Make sure you dont have multiple instance of BBox label tool multi class. Ensure that the image folder with your images has a unique name. Ensure that there is not another folder called "Labels".
+* (For now) Make sure you dont have multiple folders of BBox label tool multi class. Ensure that the image folder with your images has a unique name. Ensure that there is not another folder called "Labels".
