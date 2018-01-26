@@ -51,6 +51,8 @@ The main.py file runs indepedently and can convert .png images on linux systems 
 
 (Mind the WARNING if one appears)
 
+6) Move the backup folder from darknet with the weights file so that it saves your weights when training.
+
 ### Additional Details
 
 You will find your images and files in the ALLrecentJpgTxt folder.
