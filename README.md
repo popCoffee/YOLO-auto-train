@@ -7,7 +7,7 @@ A script that automates the tedious task of training YOLOv2. This works on linux
 
 This is a script that automates the tedious task of training YOLOv2. This works on linux systems. YOLO (you only look once) is a fast object detection system. The script is intended to reduce the amount of time spent training the YOLO system. This repository comes with the main.py file and the automation.py file. 
 The automation.py script supports one class currently.
-The main.py file runs indepedently and can convert .png images on linux systems to .jpg for labeling. 
+The main.py file runs indepedently and can convert .png images on linux systems to .jpg for labeling. The automation.py script will also convert .png files.
 
 
 ## Running the file automation.py
@@ -66,9 +66,9 @@ You can use ' -gpus0,1 ' if you have more than one gpu at your disposal:
 
 ### Notes
 
-* The script will only handle one file at a time, so if you have multiple folders with images the script will need to be ran multiple times.
+* The script will only handle one file at a time, so if you have multiple folders with images the script will need to be ran multiple times. Every time it runs, the script will place all images into the ALLrecentJpgTxt folder.
 
-* The script will only handle one file at a time. If there are multiple folders with labled .txt files in them (for example Labels/001/, Labels/002/ ... etc) the script will need to be ran multiple times.
+* The script will only handle one file at a time. If there are multiple folders with labled .txt files in them (for example Labels/001/, Labels/002/ ... etc) the script will need to be ran multiple times. Every time it runs, the script will place all .txt files into the ALLrecentJpgTxt folder.
 
 * Currently the script handles one class. This can be easily changed.
 
@@ -76,4 +76,5 @@ You can use ' -gpus0,1 ' if you have more than one gpu at your disposal:
 
 * Subdivisions number is standard 8. Decreasing it may cause a seg fault. The GPU may run out of memory. However 6 is a good number to use on better GPUs.
 
+* 
 
