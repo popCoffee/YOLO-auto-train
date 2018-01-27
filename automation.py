@@ -83,10 +83,10 @@ def conversion():
 
     ##___________________________________________
 
+    name_of_folder = "Labels"
+    lpath = dir_search(name_of_folder)
 
-    lpath = dir_search("Labels")
-
-    dir_labels = "".join([lpath, "Labels"])
+    dir_labels = "".join([lpath, name_of_folder])
     print dir_labels + " \n the path to Labels folder is above \n"
     #raw_input("\n press enter ")
 
@@ -311,10 +311,3 @@ if __name__ == "__main__":
     quit()
 
 ##end
-
-
-
-
-
-
-## instruction set taken from https://timebutt.github.io/static/author/nils/
