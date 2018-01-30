@@ -63,10 +63,10 @@ def dir_search(nmq):
 
 #print os.path.join(r, dirr)
 ##-------------------------------convert txt files---------------------
-def conversion():
+def conversion(classn):
     print "\n converting txt files to yolo format \n"
 
-    classes = ["wave"]
+    classes = [classn]
 
     def convert(size, box):
         dww = 1./size[0]
@@ -83,10 +83,10 @@ def conversion():
 
     ##___________________________________________
 
-    name_of_folder = "Labels"
-    lpath = dir_search(name_of_folder)
 
-    dir_labels = "".join([lpath, name_of_folder])
+    lpath = dir_search("Labels")
+
+    dir_labels = "".join([lpath, "Labels"])
     print dir_labels + " \n the path to Labels folder is above \n"
     #raw_input("\n press enter ")
 
@@ -207,7 +207,7 @@ if __name__ == "__main__":
 
     print ' The path to your file is \n'
     PATHN = dir_search(P)
-    print PATHN 
+    print PATHN
 
     print "\n Path to BBOX Label Tool \n"
     PATHB = dir_search("BBox-Label-Tool-Multi-Class")
@@ -224,7 +224,7 @@ if __name__ == "__main__":
            "\n Please have (image labeled) txt files\n")
     raw_input('\n press enter \n')
     print "%s%s/"  % (PATHN, P)
-    
+
     subprocess_cmd('mkdir Newimages')
     subprocess_cmd('  cp  %s%s/* %sNewimages ' % (PATHN, P, PATH2B))
     print " Please wait... \n"
@@ -238,11 +238,12 @@ if __name__ == "__main__":
     subprocess_cmd('cd Labels ; mkdir converted;  ')
 
     #class, predefined
-    CLAS = "wave"
+    classname = str(raw_input(" what is the name of the class >>> "))
+    CLAS = classname
     cls = CLAS
 
     ##converting
-    conversion()
+    conversion(cls)
     subprocess_cmd(' cp -r %sLabels/converted/* %sALLrecentJpgTxt ; rm -r converted ' % (PATH2B, PATH2B))
 
     NEW = raw_input('\n Is darknet installed?  y/n >>> ')
@@ -311,8 +312,3 @@ if __name__ == "__main__":
     quit()
 
 ##end
-
-
-
-
-## instruction set taken from https://timebutt.github.io/static/author/nils/
