@@ -6,7 +6,7 @@ A script that automates the tedious task of training YOLOv2. This works on linux
 ## Overview
 
 This is a script that automates the tedious task of training YOLOv2. This works on linux systems. YOLO (you only look once) is a fast object detection system. The script is intended to reduce the amount of time spent training the YOLO system. This repository comes with the main.py file and the automation.py file. 
-The automation.py script supports one class per image set; just run the script for each class to get multi-class labeling.
+The automation.py script supports one class per image set.
 The main.py file runs indepedently and can convert .png images on linux systems to .jpg for labeling. The automation.py script will also convert .png files.
 
 
@@ -72,7 +72,7 @@ You can use ' -gpus0,1 ' if you have more than one gpu at your disposal:
 
 * The script will only handle one file at a time. If there are multiple folders with labled .txt files in them (for example Labels/001/, Labels/002/ ... etc) the script will need to be ran multiple times. Every time it runs, the script will place all .txt files into the ALLrecentJpgTxt folder.
 
-* Currently the script handles one class. This can be easily changed.
+* Currently the script handles one class per set. This can be easily changed; just run the script for each class to get multi-class labeling.
 
 * Batch number is 64. Better performing GPUs can take on 128 and so on.
 
